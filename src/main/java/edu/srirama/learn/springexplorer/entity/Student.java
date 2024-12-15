@@ -10,7 +10,7 @@ import lombok.ToString;
 @ToString
 public class Student {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(name="STUDENT_NAME", length=50, nullable=false, unique=false)
