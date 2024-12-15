@@ -12,9 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SriRamaController {
 
-
-    private static final Logger log = LoggerFactory.getLogger(SriRamaController.class);
-
     @GetMapping("/ping")
     public ResponseEntity<String> ping() {
         log.info("SriRamaController.ping");

@@ -1,4 +1,4 @@
-package repo;
+package edu.srirama.learn.springexplorer.repo;
 
 import edu.srirama.learn.springexplorer.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;

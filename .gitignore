@@ -1,0 +1,22 @@
+# Gradle build files
+.gradle/
+build/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Compiled class files
+out/
+
+# Project-specific files
+# Add any other files or directories you want to ignore

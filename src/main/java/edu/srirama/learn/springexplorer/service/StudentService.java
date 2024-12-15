@@ -4,7 +4,7 @@ import edu.srirama.learn.springexplorer.entity.Student;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import repo.StudentRepo;
+import edu.srirama.learn.springexplorer.repo.StudentRepo;
 
 @Slf4j
 @Service
