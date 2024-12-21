@@ -6,3 +6,29 @@ spring:
     url: jdbc:postgresql://localhost:5432/srirama_db
     username: srirama
     password: sriramaramarama
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      auto-offset-reset: earliest
+      client-id: srirama-test-client
+      group-id: srirama-test-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          kafka:
+            consumer:
+              json:
+                trusted:
+                  packages: "*"
+                default-type: java.util.LinkedHashMap
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    listener:
+      ack-mode: MANUAL
+
+
+custom:
+  consumer-topic-name: my-topic-1
+  consumer-group-id: srirama-group-01
